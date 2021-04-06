@@ -15,7 +15,7 @@ import EventsExp from './EventsExp';
 import FormsExp from './FormsExp';
 import LoginForm from './LoginForm';
 import SpreadOperator from './SpreadOperator';
-
+import ToDoList from './ToDoList';
 const App = () => {
 
   return (
@@ -51,6 +51,7 @@ const App = () => {
       <FormsExp />
       <LoginForm />
       <SpreadOperator />
+      <ToDoList />
     </>
 
 

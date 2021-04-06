@@ -1,4 +1,5 @@
 import React, {useState}from 'react';
+import Calendars from './Calendars';
 
 const FormsExp = () => {
     const [newname,setName] = useState('');
@@ -17,7 +18,8 @@ const FormsExp = () => {
     return(
         <>
         <form onSubmit={ShowText}>
-           <div className="formsexp">     
+           <div className="formsexp">   
+           <Calendars />  
                     <h1 className="heading_form">Hi {newname}!</h1>
                     <input type = "text" placeholder = "Enter your name" onChange={TakeText}/><br/>
                     <button type="submit">Click Here 💂 </button>

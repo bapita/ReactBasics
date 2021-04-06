@@ -1,4 +1,7 @@
 import React, {useState} from 'react';
+import AddIcon from '@material-ui/icons/Add';
+import RemoveIcon from '@material-ui/icons/Remove';
+
 
 const HooksExp = () => {
         // introducing Hooks using useState() 
@@ -15,11 +18,22 @@ const HooksExp = () => {
        const IncNumber = () => {
         return setCount(count+1); // updates count's state
      }
+
+     const DecNumber = () => {
+        if(count>0){
+           return setCount(count-1);
+        }else{
+            alert("Can not decrease further");
+            return setCount(0);
+        }
+     }
     return(
         <>
         <div className="increament">
             <h1>{count}</h1>
-            <button className="btnincr" onClick={IncNumber}>++Increament</button>
+            <AddIcon className="btnincr" onClick={IncNumber} />
+            
+            <RemoveIcon className="btnincr" onClick={DecNumber}/>
         </div>
             
         </>
