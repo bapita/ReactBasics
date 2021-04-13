@@ -16,6 +16,8 @@ import FormsExp from './FormsExp';
 import LoginForm from './LoginForm';
 import SpreadOperator from './SpreadOperator';
 import ToDoList from './ToDoList';
+import BootstrapMiniProj from './BootstrapMiniProj';
+import GoogleKeepApp from './GoogleKeepApp';
 const App = () => {
 
   return (
@@ -27,6 +29,7 @@ const App = () => {
       <Greeting />
       <Heading />
       <Unorderedlist />
+      <BootstrapMiniProj />
       <h1 className="heading_style">Top Netflix Series List</h1>
       <div className="back">
         {// using map function Sdata.map(ncard) to iterate the (value, index, array) from Sdata array of objects
@@ -52,6 +55,7 @@ const App = () => {
       <LoginForm />
       <SpreadOperator />
       <ToDoList />
+      <GoogleKeepApp />
     </>
 
 

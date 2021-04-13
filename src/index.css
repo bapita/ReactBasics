@@ -80,7 +80,7 @@ code {
   background-color:#d6d6c2;
 }
 
-.card{
+.carding{
   margin: 6%;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
   background-color: #fff;
@@ -361,6 +361,109 @@ ol li {
 }
 .todo_style .fa-times:hover .list_style{
   color: crimson;
+}
+
+.googleheader{
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: -50px 0 0 0px;
+  justify-content: center;
+  background-color: rgb(243, 137, 98);
+
+}
+.googleheader h1 {
+  color: #0d7ff8;
+  text-align:center;
+  text-transform:uppercase;
+  font-weight:bold;
+  text-shadow: 0px 2px 4px #ffe9c5;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.googlelogo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.main_note{
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.main_note form input{
+  text-align: left;
+  height: 30px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 500px;
+  border-bottom: 2px solid #069ff2;
+  outline: none;
+}
+
+textarea {
+  width: 500px;
+  height: 100px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+
+.plus_sign{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c5b522;
+  border-radius: 50%;
+  padding: 5px;
+  color: rgb(236, 45, 45);
+  margin: 0 25px 0 -50px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+.google_note_display{
+  width: auto;
+  height: auto;
+  display: flex;
+  margin: 0 25px 0 -50px;
+  justify-content: center;
+}
+
+.google_note{
+  width: 50%;
+  height: auto;
+  display: flex;
+  margin: 0 10px 0 10px;
+  justify-content: space-evenly;
+  background-color: rgb(238, 213, 213);
+}
+
+.google_note h1{
+  color: #4a5057;
+  text-align:center;
+  text-transform:capitalize;
+  font-weight: 500;
+  font-size: 30px;
+  text-shadow: 0px 2px 4px #ffe9c5;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0 10px 0 10px;
+}
+
+.deleteIcon{
+  width: 0.7em;
+  height: 0.7em;
 }
 
 @media (max-width: 768px){

@@ -1,5 +1,6 @@
 import React from 'react';
 import * as calc from './Calculations';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function RandomPractice() {
     //var React = require('react');
@@ -37,8 +38,8 @@ function RandomPractice() {
             <p>Division of two numbers {calc.div(40,3)}</p>
             <p>Multiplication of two numbers {calc.mult(40,4)}</p>
             <p>Subtraction of two numbers {calc.subs(40,3)}</p>
-
-
+            <h1 className ="text-capitalize text-center mt-5 text-danger ">Bootstrap class</h1>
+            <button className="btn btn-success align-content-center">Bootstrap button</button>
         </>
     );
 
