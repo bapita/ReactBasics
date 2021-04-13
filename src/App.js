@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext } from 'react';
 import Heading from './Heading';
 import Unorderedlist from './Unorderedlist';
 import Greeting from './Greeting';
@@ -18,6 +18,10 @@ import SpreadOperator from './SpreadOperator';
 import ToDoList from './ToDoList';
 import BootstrapMiniProj from './BootstrapMiniProj';
 import GoogleKeepApp from './GoogleKeepApp';
+import ContextApiCompA from './ContextApiCompA';
+
+const ContextName = createContext(); // Context API
+const ContextSecondName = createContext();
 const App = () => {
 
   return (
@@ -56,6 +60,12 @@ const App = () => {
       <SpreadOperator />
       <ToDoList />
       <GoogleKeepApp />
+        <ContextName.Provider value= {'Context API'}>
+          <ContextSecondName.Provider value = {'concept'}>
+            <ContextApiCompA />
+          </ContextSecondName.Provider>
+        </ContextName.Provider>
+      
     </>
 
 
@@ -63,6 +73,7 @@ const App = () => {
 
 }
 export default App;
+export { ContextName,ContextSecondName }; 
 
 // to pass as props
 /*

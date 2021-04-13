@@ -25,7 +25,7 @@ const inputEvent = (event) => {
     })
 }
 
-const addEvent = () => {
+const addEvent = () => {  
     props.passNote(note);
     setNote({
         title: '',
