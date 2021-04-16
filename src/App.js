@@ -1,4 +1,5 @@
 import React, { createContext } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import Heading from './Heading';
 import Unorderedlist from './Unorderedlist';
 import Greeting from './Greeting';
@@ -19,6 +20,12 @@ import ToDoList from './ToDoList';
 import BootstrapMiniProj from './BootstrapMiniProj';
 import GoogleKeepApp from './GoogleKeepApp';
 import ContextApiCompA from './ContextApiCompA';
+import UseEffectComp from './UseEffectComp';
+import PokemonAxios from './PokemonAxios';
+import CommonPage from './CommonPage';
+import Error from './Error';
+import Services from './Services';
+import Navbar from './Navbar';
 
 const ContextName = createContext(); // Context API
 const ContextSecondName = createContext();
@@ -65,7 +72,16 @@ const App = () => {
             <ContextApiCompA />
           </ContextSecondName.Provider>
         </ContextName.Provider>
-      
+      <UseEffectComp />
+      <PokemonAxios />
+      <Navbar />
+      <Switch>
+        <Route exact path="/" render={() => <CommonPage name="About" />} />
+        {/* If need to pass props then use render method. If only calling a page, then use Component */}
+        <Route path="/contact" component={() => <CommonPage name="Contact"/>} />
+        <Route path="/services/:technology/:subtech" component={Services} />
+        <Route component={Error} />
+      </Switch>
     </>
 
 

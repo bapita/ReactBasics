@@ -466,6 +466,76 @@ textarea {
   height: 0.7em;
 }
 
+.pokemon{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pokemon img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px solid chocolate;
+}
+.select_pokemon h1{
+  color: chocolate;
+  text-align:center;
+  text-transform:capitalize;
+  font-weight:bold;
+  text-shadow: 0px 2px 4px #ffe9c5;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0 15px 0 20px;
+}
+
+.pokemon h1{
+  padding: 30px 0;
+  text-align: center;
+  font-family: "Raleway",sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+  background-color:#fff;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 120px;
+  height: 30px;
+  border: 1px solid #999;
+  font-size: 18px;
+  color: #1c87c9;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 4px 4px #ccc;
+}
+
+.select_pokemon{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a.active_class {
+  color: #fff;
+  border-bottom: 1px solid red;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  background-color:#20232a;
+  width: 100%;
+  line-height: 60px;
+
+}
+
 @media (max-width: 768px){
   .card{
     float: none;
