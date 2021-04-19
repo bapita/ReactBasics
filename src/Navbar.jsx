@@ -8,6 +8,7 @@ const Navbar = () => {
             <br/><hr/>
             <div className="navbar">
             <NavLink exact activeClassName="active_class" to="/">About Page</NavLink>
+            <NavLink exact activeClassName="active_class" to="/search">Search Page</NavLink>
             <NavLink exact activeClassName="active_class" to="/contact">Contact Page</NavLink>
             <NavLink activeClassName="active_class" to="/services/php/java">Services Page</NavLink>
             <NavLink exact activeClassName="active_class" to="/error">Error Page</NavLink>

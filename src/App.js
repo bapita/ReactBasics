@@ -1,5 +1,5 @@
 import React, { createContext } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Heading from './Heading';
 import Unorderedlist from './Unorderedlist';
 import Greeting from './Greeting';
@@ -26,6 +26,7 @@ import CommonPage from './CommonPage';
 import Error from './Error';
 import Services from './Services';
 import Navbar from './Navbar';
+import Search from './Search';
 
 const ContextName = createContext(); // Context API
 const ContextSecondName = createContext();
@@ -74,13 +75,15 @@ const App = () => {
         </ContextName.Provider>
       <UseEffectComp />
       <PokemonAxios />
-      <Navbar />
+      <Navbar /> {/* To show the menu */}
       <Switch>
         <Route exact path="/" render={() => <CommonPage name="About" />} />
         {/* If need to pass props then use render method. If only calling a page, then use Component */}
         <Route path="/contact" component={() => <CommonPage name="Contact"/>} />
         <Route path="/services/:technology/:subtech" component={Services} />
+        <Route path="/search" component={Search} />
         <Route component={Error} />
+        <Redirect to="/" />
       </Switch>
     </>
 
